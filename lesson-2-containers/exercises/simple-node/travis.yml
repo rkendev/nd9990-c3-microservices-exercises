@@ -15,10 +15,4 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t simple-node .
-  - docker tag simple-node rkensdockhub/simple-node:latest
-
-after_success:
-  - echo "D@ck@rH@b_5000^X" | docker login -u "rkensdockhub" --password-stdin
-  - docker push rkensdockhub/simple-node
   
