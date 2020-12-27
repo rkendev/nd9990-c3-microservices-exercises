@@ -1,10 +1,7 @@
 language: node_js
+
 node_js:
-  - 13
+- node
+- 'lts/*'
 
-services:
-  - docker
-
-# Pre-testing installs
-install:
-  - echo "nothing needs to be installed"
+cache: npm
